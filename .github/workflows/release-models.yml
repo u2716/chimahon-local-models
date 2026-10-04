@@ -20,6 +20,7 @@ jobs:
           mkdir -p dist
           zip -r dist/models.zip screenai_models/
           zip -r dist/paddle-ocr.zip paddle_ocr/
+          zip -r dist/meiki-ocr.zip meiki_ocr/
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
@@ -29,3 +30,4 @@ jobs:
           files: |
             dist/models.zip
             dist/paddle-ocr.zip
+            dist/meiki-ocr.zip
